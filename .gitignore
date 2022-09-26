@@ -1,0 +1,15 @@
+/target/
+/.settings
+/.classpath
+/.idea
+/.vscode
+/.project
+/project/project/
+/project/target/
+/report/
+*.log
+/results/
+
+simulation_output
+!simulation_output/.gitkeep
+.bsp/sbt.json

@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  loadtest:
+    build: .
+    container_name: loadtest
+    command: /bin/bash -c "sbt \"Gatling/test\""
+    env_file:
+      - .env
+    volumes:
+      - ./simulation_output:/code/target/gatling
+      - ./src:/code/src
+      - ./build.sbt:/code/build.sbt
