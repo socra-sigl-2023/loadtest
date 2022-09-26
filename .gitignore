@@ -13,3 +13,4 @@
 simulation_output
 !simulation_output/.gitkeep
 .bsp/sbt.json
+.env
